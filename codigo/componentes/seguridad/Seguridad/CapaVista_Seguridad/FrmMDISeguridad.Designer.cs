@@ -34,6 +34,7 @@
             this.SeguridadBtnBurger = new System.Windows.Forms.Button();
             this.SeguridadLblUsuario = new System.Windows.Forms.Label();
             this.SeguridadPnlNavegador = new System.Windows.Forms.Panel();
+            this.BtnMantenimientoBodegas = new System.Windows.Forms.Button();
             this.SeguridadBtnBitacora = new System.Windows.Forms.Button();
             this.SeguridadBtnAplicaUsuario = new System.Windows.Forms.Button();
             this.SeguridadBtnAplicaPerfiles = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             this.SeguridadPbLogo = new System.Windows.Forms.PictureBox();
             this.SeguridadBtnCerrarSesion = new System.Windows.Forms.Button();
             this.SeguridadPnlDashboard = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SeguridadBtnAyudas = new System.Windows.Forms.Button();
             this.SeguridadPnlKPI6 = new System.Windows.Forms.Panel();
             this.SeguridadLblKPIResp6 = new System.Windows.Forms.Label();
@@ -69,7 +71,6 @@
             this.SeguridadLblParrafo = new System.Windows.Forms.Label();
             this.SeguridadLblBienvenido = new System.Windows.Forms.Label();
             this.SeguridadPbButti = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.SeguridadPnlFondo.SuspendLayout();
             this.SeguridadPnlNavegador.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeguridadPbLogo)).BeginInit();
@@ -153,6 +154,20 @@
             this.SeguridadPnlNavegador.Size = new System.Drawing.Size(270, 745);
             this.SeguridadPnlNavegador.TabIndex = 0;
             // 
+            // BtnMantenimientoBodegas
+            // 
+            this.BtnMantenimientoBodegas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(101)))), ((int)(((byte)(119)))));
+            this.BtnMantenimientoBodegas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMantenimientoBodegas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMantenimientoBodegas.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnMantenimientoBodegas.Location = new System.Drawing.Point(157, 280);
+            this.BtnMantenimientoBodegas.Name = "BtnMantenimientoBodegas";
+            this.BtnMantenimientoBodegas.Size = new System.Drawing.Size(261, 38);
+            this.BtnMantenimientoBodegas.TabIndex = 11;
+            this.BtnMantenimientoBodegas.Text = "Mantemiento Bodegas";
+            this.BtnMantenimientoBodegas.UseVisualStyleBackColor = false;
+            this.BtnMantenimientoBodegas.Click += new System.EventHandler(this.BtnMantenimientoBodegas_Click);
+            // 
             // SeguridadBtnBitacora
             // 
             this.SeguridadBtnBitacora.BackColor = System.Drawing.Color.Transparent;
@@ -172,7 +187,7 @@
             this.SeguridadBtnAplicaUsuario.BackgroundImage = global::CapaVista_Seguridad.Properties.Resources.botonmdi81;
             this.SeguridadBtnAplicaUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnAplicaUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SeguridadBtnAplicaUsuario.Location = new System.Drawing.Point(3, 506);
+            this.SeguridadBtnAplicaUsuario.Location = new System.Drawing.Point(6, 502);
             this.SeguridadBtnAplicaUsuario.Name = "SeguridadBtnAplicaUsuario";
             this.SeguridadBtnAplicaUsuario.Size = new System.Drawing.Size(264, 42);
             this.SeguridadBtnAplicaUsuario.TabIndex = 8;
@@ -301,6 +316,7 @@
             this.SeguridadPnlDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(238)))), ((int)(((byte)(225)))));
             this.SeguridadPnlDashboard.BackgroundImage = global::CapaVista_Seguridad.Properties.Resources.dashboardSeguridad;
             this.SeguridadPnlDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SeguridadPnlDashboard.Controls.Add(this.BtnMantenimientoBodegas);
             this.SeguridadPnlDashboard.Controls.Add(this.button1);
             this.SeguridadPnlDashboard.Controls.Add(this.SeguridadBtnAyudas);
             this.SeguridadPnlDashboard.Controls.Add(this.SeguridadPnlKPI6);
@@ -317,6 +333,16 @@
             this.SeguridadPnlDashboard.Name = "SeguridadPnlDashboard";
             this.SeguridadPnlDashboard.Size = new System.Drawing.Size(1208, 711);
             this.SeguridadPnlDashboard.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(52, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 61);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Boton Prueba";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SeguridadBtnAyudas
             // 
@@ -594,16 +620,6 @@
             this.SeguridadPbButti.TabIndex = 0;
             this.SeguridadPbButti.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(52, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 61);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Boton Prueba";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FrmMDISeguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -679,5 +695,6 @@
         private System.Windows.Forms.Label SeguridadLblUsuario;
         private System.Windows.Forms.Button SeguridadBtnCerrarSesion;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnMantenimientoBodegas;
     }
 }

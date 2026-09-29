@@ -35,6 +35,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaVista_Mantenimiento2k26;
+using CapaVista_Mantenimiento2k26.frmReportes;
 
 
 namespace CapaVista_Seguridad
@@ -311,6 +313,12 @@ namespace CapaVista_Seguridad
         {
             Antes Pruebaantesparcial = new Antes();
             Pruebaantesparcial.ShowDialog();
+        }
+
+        private void BtnMantenimientoBodegas_Click(object sender, EventArgs e)
+        {
+            FrmMantenimiento FormularioMantenimiento = new FrmMantenimiento();
+            FormularioMantenimiento.ShowDialog();
         }
     }
 }
