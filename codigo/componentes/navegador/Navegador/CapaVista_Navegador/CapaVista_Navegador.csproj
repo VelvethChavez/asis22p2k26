@@ -123,10 +123,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <!-- La ayuda del Navegador viaja dentro de la DLL (ver ClsNavegadorAyuda). -->
-    <EmbeddedResource Include="..\..\..\..\..\ayuda\componentes\navegador\Navegador.chm">
-      <Link>Ayudas\Navegador.chm</Link>
-      <LogicalName>Navegador.chm</LogicalName>
-    </EmbeddedResource>
     <EmbeddedResource Include="Navegador.resx">
       <DependentUpon>Navegador.cs</DependentUpon>
     </EmbeddedResource>
