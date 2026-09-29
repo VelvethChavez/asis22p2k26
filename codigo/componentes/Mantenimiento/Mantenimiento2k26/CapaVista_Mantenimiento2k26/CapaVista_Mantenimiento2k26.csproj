@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaVista_Mantenimiento2k26.frmReportes.FrmReporteMantenimiento.datasource" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmMantenimiento.resx">
@@ -110,6 +111,7 @@
     <EmbeddedResource Include="frmReportes\FrmReporteMantenimiento.resx">
       <DependentUpon>FrmReporteMantenimiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteMantenimientoBodega.rdlc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
